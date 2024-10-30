@@ -1,0 +1,14 @@
+{% extends "bookmodule/layouts/base.html" %}
+{% load static %}
+
+{% block title %}Book Details{% endblock title %}
+
+{% block content %}
+<a href="{% url 'books.list_books' %}">Go Back</a>
+<h1>Details of {{ book.title }}</h1> <!-- Dynamically display the book title -->
+<h2>Author: {{ book.author }}</h2> <!-- Dynamically display the author -->
+<h4>ID: {{ book.id }}</h4> <!-- Dynamically display the book ID -->
+<h4>Description</h4>
+<p>Description here</p> <!-- Add a description field -->
+<img src="{% static book.image_url %}" alt="{{ book.title }} image description" width="200" height="200"> <!-- Dynamically display the book image -->
+{% endblock content %}

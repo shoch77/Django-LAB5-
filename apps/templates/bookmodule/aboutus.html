@@ -1,0 +1,13 @@
+{% extends "bookmodule/layouts/base.html" %}
+{% load static %}
+
+{% block title %} About Us {% endblock title %}
+
+{% block content %}
+<h1 style="color: blue;">About Us</h1>
+<p>Welcome to our library! We provide a wide range of books and resources for learning.</p>
+<p>Our mission is to promote reading and lifelong learning.</p>
+<img src="{% static 'about_image.jpg' %}" alt="About Us" width="300" height="200"> <!-- Update the image path as needed -->
+<hr>
+<a href="{% url 'books.index' %}">Go Back to Home</a>
+{% endblock content %}
