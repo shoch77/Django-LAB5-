@@ -1,19 +1,68 @@
-/* Add a black background color to the top navigation */
-.topnav {
-    background-color: #eeeeee;
-    width: 100%;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-    color: #000000;
+/* General Link Styling */
+a {
+    display: block;
     text-align: center;
-    margin-right: 25px;
-    text-decoration: none;
-    font-size: 17px;
+    padding: 20px;
+    font-size: 20px;
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-    color: #008CBA;
+a:nth-of-type(1) {
+    background-color: #60b475; 
+    color: rgb(179, 95, 26);
+}
+a:nth-of-type(2) {
+    background-color: #35373a; 
+    color: rgb(169, 169, 71);
+}
+a:nth-of-type(3) {
+    background-color: #000000; 
+    color: white;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+/* Header styling for text formatting page */
+.h1 {
+    color: rgb(47, 139, 64);
+    font-size: 30px;
+    padding: 10px;
+    text-align: left;
+    background-color: rgb(246, 249, 204);
+}
+
+/* listting header */
+h2 {
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    text-align: left;
+    background-color: rgb(58, 142, 148);
+}
+
+/* Table styling */
+/* General table styling */
+.table {
+    border-collapse: collapse;
+    margin: 20px auto; /* Center tables */
+}
+
+th, td {
+    border: 2px double #0e0d0d;
+    padding: 8px;
+    text-align: center; /* Center text in table cells */
+    vertical-align: middle; /* Center text vertically */
+}
+
+caption {
+    caption-side: top;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Styling for the complex table */
+.complex img {
+    display: block;
+    margin: auto;
 }

@@ -4,43 +4,24 @@
 {% block title %}List of Books{% endblock title %}
 
 {% block content %}
-<style> /* Internal CSS */
-    h1 {
-        color: green;
-    }
-    h2 {
-        color: lightskyblue;
-    }
-    p {
-        font-family: verdana;
-        font-size: 20px;
-    }
-</style>
-
-<div class="topnav"> <!-- Navigation bar -->
-    <a href="{% url 'books.index' %}">Home</a>
-    <a class="active" href="{% url 'books.list_books' %}">List Books</a>
-    <a href="{% url 'books.aboutus' %}">About</a>
-</div>
 
 <h1>List of Books</h1>
 
-<div class="book">
-    <a href="{% url 'books.show_book' book1.id %}"><h2>Internet & World Wide Web How to Program</h2></a>
-    <a href="{% url 'books.show_book' book1.id %}"><img src="{% static 'book1.jpg' %}" alt="Book1 img desc" width="200" height="200"></a>
+<div>
+    <a href="one_book.html"><h2>1) Internet & World Wide Web How to Program</h2></a>
+    <a href="one_book.html"><img src="{% static 'book1.jpg' %}" alt="book1 img desc" width="200" height="200"></a>
+    <hr>
 </div>
-<hr>
 
-<div class="book">
-    <a href="{% url 'books.show_book' book2.id %}"><h2>2) C++ How to Program, Late Objects Version</h2></a>
-    <img src="{% static 'book2.jpg' %}" alt="Book2 img desc" width="200" height="200">
+<div>
+    <a href="one_book.html"><h2>2) C++ How to Program, Late Objects Version</h2></a>
+    <a href="one_book.html"><img src="{% static 'book2.jpg' %}" alt="book2 img desc" width="200" height="200"></a>
+    <hr>
 </div>
-<hr>
 
-<div class="book">
-    <a href="{% url 'books.show_book' book3.id %}"><h2>3) Images in Another Folder</h2></a>
-    <img src="{% static 'book3.jpg' %}" alt="Book3 img desc" width="200" height="200">
+<div>
+    <a href="one_book.html"><h2>3) Images in Another Folder</h2></a>
+    <a href="one_book.html"><img src="{% static 'book3.jpg' %}" alt="book3 img desc" width="200" height="200"></a>
+    <hr>
 </div>
-<hr>
-
 {% endblock content %}
